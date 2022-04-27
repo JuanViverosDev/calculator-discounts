@@ -1,0 +1,95 @@
+body{
+    background-color: hsl(185, 41%, 84%);
+}
+
+@media (min-width: 1440px) {
+.container{
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px;
+    margin: auto 27%;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.149);
+    display: grid;
+    justify-content: space-between;
+}
+.subcontainer1{
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px;
+    margin: 2%;
+}
+.subcontainer2{
+    background-color: hsl(183, 100%, 15%);
+    padding: 30px;
+    margin: 2%;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.149);
+}
+.title{
+    color: hsl(183, 100%, 15%);
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.campos{
+    background-color: hsl(189, 41%, 97%);
+}
+.textarea{
+    resize: none;
+    background-color: transparent;
+    border: none;
+    color: hsl(172, 67%, 45%);
+    font-size: 40px;
+    font-family: 'Space Mono', monospace;
+    height: auto;
+    font-weight: bold;
+}
+.subtitles{
+    font-size: 15px;
+    color: hsl(184, 14%, 56%);
+}
+.subtitles1{
+    color: white;
+    font-size: 15px;
+}
+span{
+    color: hsl(184, 14%, 56%);
+}
+input{
+    color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    text-align: right;
+}
+.valores{
+    display: grid;
+}
+.boton{
+    width: 100%;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 7px;
+    font-size: 20px;
+    padding: 2px;
+    border: none;
+    outline: none;
+}
+.boton1{
+    padding: 10px;
+    width: 100%;
+    color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: hsl(172, 67%, 45%);
+    border-radius: 7px;
+    border: none;
+    outline: none;
+}
+.custom{
+
+}
+}

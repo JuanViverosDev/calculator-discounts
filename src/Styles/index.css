@@ -6,10 +6,11 @@ body{
 .container{
     background-color: hsl(0, 0%, 100%);
     padding: 10px;
-    margin: auto 27%;
+    margin: auto 25%;
     border-radius: 20px;
     box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.149);
     display: grid;
+    grid-template-columns: 50% 50%;
     justify-content: space-between;
 }
 .subcontainer1{
@@ -32,7 +33,20 @@ body{
     font-weight: bold;
 }
 .campos{
-    background-color: hsl(189, 41%, 97%);
+    background-color: transparent;
+    color: hsl(183, 100%, 15%);
+    outline: none;
+    border: none;
+    font-size: 23px;
+}
+.campos:focus{
+    background-color: transparent;
+    outline: none;
+    border: hsl(172, 67%, 45%) solid;
+}
+.campos::placeholder{
+    color: hsl(183, 100%, 15%);
+    font-size: 23px;
 }
 .textarea{
     resize: none;
@@ -43,6 +57,8 @@ body{
     font-family: 'Space Mono', monospace;
     height: auto;
     font-weight: bold;
+    margin: 0%;
+    width: 100%;
 }
 .subtitles{
     font-size: 15px;
@@ -63,7 +79,7 @@ input{
 }
 .valores{
     display: grid;
-}
+    grid-template-columns: 33% 33% 33%;}
 .boton{
     width: 100%;
     color: white;
@@ -71,11 +87,12 @@ input{
     font-weight: bold;
     text-transform: uppercase;
     background-color: hsl(183, 100%, 15%);
-    border-radius: 7px;
+    border-radius: 5px;
     font-size: 20px;
-    padding: 2px;
+    padding: 7px;
     border: none;
     outline: none;
+    margin: 0px 8% 5% 0px;
 }
 .boton1{
     padding: 10px;
@@ -88,8 +105,13 @@ input{
     border-radius: 7px;
     border: none;
     outline: none;
+    margin-top: 20%;
 }
 .custom{
-
+    width: 50px;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
 }
 }

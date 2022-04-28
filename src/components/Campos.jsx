@@ -1,10 +1,14 @@
 import React from 'react'
 import "../Styles/index.css"
 
-const Campos = () => {
+const Campos = (props) => {
+  const{
+    valor,
+    onChange,
+} = props;
   return (
     <>
-        <input placeholder='0' className='campos'/>
+        <input type={"number"} placeholder='0' onChange={onChange} className='campos' value={valor}></input>
     </>
   )
 }

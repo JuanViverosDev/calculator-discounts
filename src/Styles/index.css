@@ -1,16 +1,15 @@
+@media (max-width: 1439px) {
 body{
     background-color: hsl(185, 41%, 84%);
+    margin: 0%;
+    overflow-x: hidden;
 }
 
-@media (min-width: 1440px) {
 .container{
     background-color: hsl(0, 0%, 100%);
     padding: 10px;
-    margin: auto 25%;
-    border-radius: 20px;
-    box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.149);
-    display: grid;
-    grid-template-columns: 50% 50%;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: -10px 5px 5px 1px rgba(0, 0, 0, 0.149);
     justify-content: space-between;
 }
 .subcontainer1{
@@ -31,13 +30,16 @@ body{
     letter-spacing: 10px;
     font-size: 20px;
     font-weight: bold;
+    margin: 8% 0px;
 }
 .campos{
     background-color: transparent;
     color: hsl(183, 100%, 15%);
     outline: none;
-    border: none;
+    border: solid transparent;
     font-size: 23px;
+    width: 100%;
+    border-radius: 5px;
 }
 .campos:focus{
     background-color: transparent;
@@ -45,8 +47,50 @@ body{
     border: hsl(172, 67%, 45%) solid;
 }
 .campos::placeholder{
-    color: hsl(183, 100%, 15%);
+    color: hsl(184, 14%, 56%);
     font-size: 23px;
+}
+.custom{
+    background-color: transparent;
+    color: hsl(183, 100%, 15%);
+    outline: none;
+    border: none;
+    font-size: 23px;
+    width: 94%;
+    border-radius: 5px;
+    height: 65%;
+    border: solid transparent;
+    text-align: center;
+}
+.custom:focus{
+    background-color: transparent;
+    outline: none;
+    border: hsl(172, 67%, 45%) solid;
+}
+.custom::placeholder{
+    color: hsl(184, 14%, 56%);
+    font-size: 23px;
+}
+.camposerror{
+    background-color: transparent;
+    color: hsl(183, 100%, 15%);
+    outline: none;
+    border: solid transparent;
+    font-size: 23px;
+    width: 100%;
+    border-radius: 5px;
+}
+.camposerror:focus{
+    background-color: transparent;
+    outline: none;
+    border: crimson solid;
+}
+.camposerror::placeholder{
+    color: hsl(184, 14%, 56%);
+    font-size: 23px;
+}
+.error{
+    color: crimson;
 }
 .textarea{
     resize: none;
@@ -60,9 +104,13 @@ body{
     margin: 0%;
     width: 100%;
 }
+.textarea::placeholder{
+    color: hsl(172, 67%, 45%);
+}
 .subtitles{
     font-size: 15px;
     color: hsl(184, 14%, 56%);
+    margin-bottom: 5%;
 }
 .subtitles1{
     color: white;
@@ -77,9 +125,18 @@ input{
     font-weight: bold;
     text-align: right;
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
 .valores{
     display: grid;
-    grid-template-columns: 33% 33% 33%;}
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+}
 .boton{
     width: 100%;
     color: white;
@@ -92,7 +149,15 @@ input{
     padding: 7px;
     border: none;
     outline: none;
-    margin: 0px 8% 5% 0px;
+    margin: 0px 0px 15% 0px;
+}
+.boton:hover{
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+.botonvisited{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
 }
 .boton1{
     padding: 10px;
@@ -105,13 +170,222 @@ input{
     border-radius: 7px;
     border: none;
     outline: none;
-    margin-top: 20%;
-}
-.custom{
-    width: 50px;
+    margin-top: 5%;
 }
 .total{
     display: flex;
     justify-content: space-between;
+}
+.secciones{
+    margin-bottom: 5%;
+}
+.titulitos{
+    display: flex;
+    justify-content: space-between;
+}
+.titulitos1{
+    display: none;
+}
+.titulitoserror{
+    font-size: 15px;
+    color: crimson;
+    margin-bottom: 5%;
+}
+}
+@media (min-width: 1440px) {
+    body{
+        background-color: hsl(185, 41%, 84%);
+        margin: auto;
+    }
+.container{
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px;
+    margin: auto 25%;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.149);
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+}
+.subcontainer1{
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px;
+    margin: 2%;
+}
+.subcontainer2{
+    background-color: hsl(183, 100%, 15%);
+    padding: 30px;
+    margin: 2%;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.149);
+}
+.title{
+    color: hsl(183, 100%, 15%);
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5% 0px;
+}
+.campos{
+    background-color: transparent;
+    color: hsl(183, 100%, 15%);
+    outline: none;
+    border: solid transparent;
+    font-size: 23px;
+    width: 100%;
+    border-radius: 5px;
+}
+.campos:focus{
+    background-color: transparent;
+    outline: none;
+    border: hsl(172, 67%, 45%) solid;
+}
+.campos::placeholder{
+    color: hsl(184, 14%, 56%);
+    font-size: 23px;
+}
+.custom{
+    background-color: transparent;
+    color: hsl(183, 100%, 15%);
+    outline: none;
+    border: none;
+    font-size: 23px;
+    width: 90%;
+    border-radius: 5px;
+    height: 65%;
+    border: solid transparent;
+}
+.camposerror{
+    background-color: transparent;
+    color: hsl(183, 100%, 15%);
+    outline: none;
+    border: solid transparent;
+    font-size: 23px;
+    width: 100%;
+    border-radius: 5px;
+}
+.camposerror:focus{
+    background-color: transparent;
+    outline: none;
+    border: crimson solid;
+}
+.camposerror::placeholder{
+    color: hsl(184, 14%, 56%);
+    font-size: 23px;
+}
+.custom:focus{
+    background-color: transparent;
+    outline: none;
+    border: hsl(172, 67%, 45%) solid;
+}
+.custom::placeholder{
+    color: hsl(184, 14%, 56%);
+    font-size: 23px;
+}
+.camposerror{
+    border: crimson;
+}
+.error{
+    color: crimson;
+}
+.textarea{
+    resize: none;
+    background-color: transparent;
+    border: none;
+    color: hsl(172, 67%, 45%);
+    font-size: 40px;
+    font-family: 'Space Mono', monospace;
+    height: auto;
+    font-weight: bold;
+    margin: 0%;
+    width: 100%;
+}
+.textarea::placeholder{
+    color: hsl(172, 67%, 45%);
+}
+.subtitles{
+    font-size: 15px;
+    color: hsl(184, 14%, 56%);
+    margin-bottom: 5%;
+}
+.subtitles1{
+    color: white;
+    font-size: 15px;
+}
+span{
+    color: hsl(184, 14%, 56%);
+}
+input{
+    color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    text-align: right;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
+.valores{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+}
+.boton{
+    width: 100%;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 7px;
+    border: none;
+    outline: none;
+    margin: 0px 0px 15% 0px;
+}
+.boton:hover{
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+.botonvisited{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+.boton1{
+    padding: 10px;
+    width: 100%;
+    color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: hsl(172, 67%, 45%);
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    margin-top: 35%;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+}
+.secciones{
+    margin-bottom: 5%;
+}
+.titulitos{
+    display: flex;
+    justify-content: space-between;
+}
+.titulitos1{
+    display: none;
+}
+.titulitoserror{
+    font-size: 15px;
+    color: crimson;
+    margin-bottom: 5%;
 }
 }

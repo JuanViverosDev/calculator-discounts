@@ -5,10 +5,13 @@ const Campos = (props) => {
   const{
     valor,
     onChange,
+    placeholder,
+    className
 } = props;
+  
   return (
     <>
-        <input type={"number"} placeholder='0' onChange={onChange} className='campos' value={valor}></input>
+        <input type={"number"} placeholder={placeholder} onChange={onChange} className={className} value={valor}></input>
     </>
   )
 }
